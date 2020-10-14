@@ -363,6 +363,8 @@ namespace Simvars
                     oSimvarRequest.bPending = false;
                     oSimvarRequest.bStillPending = false;
 
+                     
+                    //Force "." as decimal separator to override the machine-specific culture settings
                     NumberFormatInfo nfi = new NumberFormatInfo();    
                     nfi.NumberDecimalSeparator = ".";
 
